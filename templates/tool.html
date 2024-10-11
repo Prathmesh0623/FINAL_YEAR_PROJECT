@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/tool.css">
+    <title>AI Secure Route Finder</title>
+</head>
+<body>
+    <header>
+        <h1>AI Secure Route Finder</h1>
+        <p>Your intelligent solution for safe and secure routing.</p>
+    </header>
+    
+    <main>
+        <section class="form-section">
+            <h2>Extract Satellite Imagery</h2>
+            <form id="coordinates-form" class="coordinate-form">
+                <div class="input-group">
+                    <label for="longitude1">Longitude 1:</label>
+                    <input type="text" id="longitude1" name="longitude1" required placeholder="e.g. 73.9398">
+                </div>
+                <div class="input-group">
+                    <label for="latitude1">Latitude 1:</label>
+                    <input type="text" id="latitude1" name="latitude1" required placeholder="e.g. 20.4255">
+                </div>
+                <div class="input-group">
+                    <label for="longitude2">Longitude 2:</label>
+                    <input type="text" id="longitude2" name="longitude2" required placeholder="e.g. 73.9398">
+                </div>
+                <div class="input-group">
+                    <label for="latitude2">Latitude 2:</label>
+                    <input type="text" id="latitude2" name="latitude2" required placeholder="e.g. 20.5255">
+                </div>
+                <div class="input-group">
+                    <label for="longitude3">Longitude 3:</label>
+                    <input type="text" id="longitude3" name="longitude3" required placeholder="e.g. 74.0398">
+                </div>
+                <div class="input-group">
+                    <label for="latitude3">Latitude 3:</label>
+                    <input type="text" id="latitude3" name="latitude3" required placeholder="e.g. 20.5255">
+                </div>
+                <div class="input-group">
+                    <label for="longitude4">Longitude 4:</label>
+                    <input type="text" id="longitude4" name="longitude4" required placeholder="e.g. 74.0398">
+                </div>
+                <div class="input-group">
+                    <label for="latitude4">Latitude 4:</label>
+                    <input type="text" id="latitude4" name="latitude4" required placeholder="e.g. 20.4255">
+                </div>
+                <button type="button" id="get-map-btn" class="submit-btn">Get Map</button>
+            </form>
+        </section>
+
+        <section class="map-section">
+            <center><h2>Map Result</h2></center>
+            <div id="map-result-container" class="map-result-container"></div>  <!-- Larger map container -->
+            <p id="error-message" class="error-message"></p>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AI Secure Route Finder. All Rights Reserved.</p>
+    </footer>
+    <script src="/static/tool.js"></script> <!-- JavaScript file -->
+</body>
+</html>
